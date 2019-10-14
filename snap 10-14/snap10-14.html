@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>snap 10-14</title>
+</head>
+<body>
+<p>
+	<label>Pounds</label>
+	<input id="inputPounds" type="number" placeholder="Pounds"
+			 oninput="weightConverter(this.value=1)" onchange="weightConverter(this.value=0.0022046)">
+</p>
+<p>Grams: <span id="outputGrams"></span></p>
+
+</body>
+</html>
+
+g=lb/0.0022046
+<br>
+1 lb = 453.59
+
+/**
+*actual answer
+*weight or mass to be converted
+*units the abbreiviation for the units in which this weight/mass is measured. Acceptables values: "lbs"
+*the return mass in grams.
+*/
+function convertWeightToGrams (weight,units){
+
+	if(units.toLowercase() === "lbs"){
+		weight = weight * 453.592;
+	} else if (units.toLowerCase() ==="oz"){
+		weight = weight * 28.3495;
+	}else if (units.toLowerCase() ==="kg") {
+		weight =weight *1000
+}else if (units.toLowerCase() ==="mg") {
+weight =weight / 1000;
+}
+
+	return weight;
+}
+
+
