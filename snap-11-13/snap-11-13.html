@@ -5,17 +5,17 @@
 	<title>snap-11-13</title>
 </head>
 <body>
-<div id="1,2,3,4,5,6,7,8,9,10"></div>
+<div id="1, 2, 3, 4, 5, 6, 7, 8, 9, 10"></div>
 <!--script for the purpose of housing the array-->
 <script>
-	var element = document.getElementById(1,2,3,4,5,6,7,8,9,10);
-	var array = [];
-
+	var element = document.getElementById(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+	var array = [2, 5, 6, 3, 8, 9];
+// I have zero idea what the previus line does or why, or how to figure it out.
 	var newArray = array.map(function(val, index) {
 		return {key:index, value:val*val};
 	})
 
-	console.log(new array)
+	element.innerHTML = JSON.stringify(newArray);
 </script>
 
 [
