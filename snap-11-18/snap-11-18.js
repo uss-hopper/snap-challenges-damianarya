@@ -4,6 +4,8 @@ const words = ['Ensign', 'Babyface!', 'Your', 'shields', 'were', 'failing', 'sir
 'I', 'recommend', 'you', 'don't',' 'fire', 'until', 'you're', 'within', '40,000', 'kilometers.', 'Wouldn't', 'that', 'bring', 'about', 'chaos?', 'Flair', 'is', 'what', 'marks', 'the',
 'difference', 'between', 'artistry', 'and', 'mere', 'competence."']
 
-const result = words.filter(words => words.deleteProperty("e"));
+let result;
+result = words.filter(words => words.deleteContents("e"));
 console.log(result);
+
 //remove_char("worde",4)
