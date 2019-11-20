@@ -47,3 +47,14 @@ console: [
 	Object { value="9", count=1}
 ]
 */
+
+//part two
+let resulting output = x
+let x = "fizz" if even
+let x = "buzz" if === /3
+let x = "baz" if both "fizz" & "buzz" === true
+
+var multiply = new Function('1', '100', 'return 1 * 100');
+//onchange function required
+
+//see html & css for part three
